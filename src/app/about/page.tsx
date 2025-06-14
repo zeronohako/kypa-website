@@ -66,7 +66,7 @@ export default function AboutPage() {
             <Image src="/images/member-2.jpg" alt="Edward" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">Edward</h3>
             <p className="text-blue-600">Co-founder, Vice-president</p>
-            <p className="text-gray-600 mt-2 text-sm">I'm Edward, a student at Seoul International School. As a co-founder and vice-president, I supervise the Community Outreach Team and Community Volunteer Team. Together with our team officers, we are actively promoting pickleball in Korea and engaging in volunteer initiatives for the underprivileged in our community.</p>
+            <p className="text-gray-600 mt-2 text-sm">I&apos;m Edward, a student at Seoul International School. As a co-founder and vice-president, I supervise the Community Outreach Team and Community Volunteer Team. Together with our team officers, we are actively promoting pickleball in Korea and engaging in volunteer initiatives for the underprivileged in our community.</p>
           </div>
           {/* Member 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">

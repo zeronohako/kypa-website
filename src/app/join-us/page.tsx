@@ -16,7 +16,7 @@ export default function JoinUsPage() {
 
       <section className="mb-12 text-center max-w-3xl mx-auto">
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-          Are you a young pickleball enthusiast or eager to learn? Join the Korea Youth Pickleball Association and become part of a vibrant, growing community! Whether you're a beginner or an experienced player, we have programs and events for everyone.
+          Are you a young pickleball enthusiast or eager to learn? Join the Korea Youth Pickleball Association and become part of a vibrant, growing community! Whether you&apos;re a beginner or an experienced player, we have programs and events for everyone.
         </p>
         <Image
           src="/images/join-us-hero.jpg"
