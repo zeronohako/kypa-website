@@ -45,9 +45,8 @@ export default function AboutPage() {
           KYPA has tirelessly worked to promote pickleball in Korea. The Federation of Pickleball Asia has recognized our efforts and contributions and is declaring KYPA a Federation of Pickleball Asia member.
           </p>
         </div>
-        <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg">
-          <iframe width="480" height="320" src="https://www.youtube.com/embed/VNTC7oaMv64?si=9SXrtU3MIeaiI7Ac" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-        </div>
+        <iframe className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg" src="https://www.youtube.com/embed/VNTC7oaMv64?si=9SXrtU3MIeaiI7Ac"></iframe>
+
       </section>
 
       {/* Members Section - Designed to reduce gaps */}
