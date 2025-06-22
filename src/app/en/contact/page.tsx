@@ -15,9 +15,8 @@ export default function ContactPage() {
             <p><strong>Phone:</strong> +82-10-2113-2282</p>
             <p><strong>Address:</strong>
               <br />
-              Landmark Tower B1F, 308, Gangnam- daero, Gangnam-gu, Seoul, South Korea (06253)
+              Landmark Tower B1F, 308, Gangnam-daero, Gangnam-gu, Seoul, South Korea (06253)
             </p>
-            <p><strong>Business Hours:</strong><br/>Monday - Friday: 9:00 AM - 5:00 PM KST</p>
           </div>
         </div>
 

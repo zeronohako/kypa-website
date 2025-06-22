@@ -1,9 +1,9 @@
 // src/app/page.tsx
-import Image from 'next/image'; // For the hero image
+import Image from 'next/image'; 
 import Link from 'next/link';
 import ImageCarousel from '@/components/kr/ImageCarousel';
 import ContactBlock from '@/components/kr/ContactBlock';
-import React from 'react'; // Explicit import for clarity
+import React from 'react'; 
 
 export default function HomePage() {
   const carouselImages = [
@@ -84,7 +84,6 @@ export default function HomePage() {
         <ImageCarousel images={carouselImages} />
       </section>
 
-      {/* Sponsors Section (Now on Home) */}
       <section className="container mx-auto py-16 px-4">
         <h2 className="text-4xl font-bold text-center mb-12">스폰서</h2>
         <div className="flex flex-wrap justify-center items-center gap-8">
@@ -92,7 +91,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Streamlined Contact Block */}
       <ContactBlock />
     </div>
   );

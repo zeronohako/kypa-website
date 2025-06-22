@@ -8,9 +8,9 @@ export default function Footer() {
         <p>© {new Date().getFullYear()} Korea Youth Pickleball Association. All rights reserved.</p>
         <div className="mt-4 space-x-4">
           {/* Social media links (placeholders) */}
-          <a href="#" className="hover:underline">Facebook</a>
-          <a href="#" className="hover:underline">Instagram</a>
-          <a href="#" className="hover:underline">YouTube</a>
+          <a href="#" className="hover:underline">페이스북</a>
+          <a href="#" className="hover:underline">인스타그램</a>
+          <a href="#" className="hover:underline">유튜브</a>
         </div>
       </div>
     </footer>

@@ -20,14 +20,14 @@ export default function ContactBlock({
     <div className="bg-blue-700 text-white p-8 rounded-lg shadow-lg text-center max-w-2xl mx-auto my-12">
       <h2 className="text-3xl font-bold mb-4">{title}</h2>
       <p className="text-lg mb-2">
-        <strong>Email:</strong> <a href={`mailto:${email}`} className="underline">{email}</a>
+        <strong>이메일:</strong> <a href={`mailto:${email}`} className="underline">{email}</a>
       </p>
       <p className="text-lg mb-4">
-        <strong>Phone:</strong> {phone}
+        <strong>전화번호:</strong> {phone}
       </p>
       <p className="text-lg">{address}</p>
       <Link href="/contact" className="mt-6 inline-block bg-white text-blue-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors">
-        View Full Contact Page
+        더 알아보기
       </Link>
     </div>
   );

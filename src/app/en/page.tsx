@@ -1,15 +1,14 @@
-// src/app/page.tsx
-import Image from 'next/image'; // For the hero image
+import Image from 'next/image'; 
 import Link from 'next/link';
 import ImageCarousel from '@/components/en/ImageCarousel';
 import ContactBlock from '@/components/en/ContactBlock';
-import React from 'react'; // Explicit import for clarity
+import React from 'react'; 
 
 export default function HomePage() {
   const carouselImages = [
-    { src: '/images/carousel-1.jpg', alt: 'Youth playing pickleball' },
-    { src: '/images/carousel-2.jpg', alt: 'Pickleball court' },
-    { src: '/images/carousel-3.jpg', alt: '' },
+    { src: '/images/carousel-1.jpg', alt: 'image1' },
+    { src: '/images/carousel-2.jpg', alt: 'image2' },
+    { src: '/images/carousel-3.jpg', alt: 'image3' },
   ];
 
   return (
@@ -79,17 +78,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Image Carousel Section (used to consolidate extra images) */}
       <section className="py-16">
         <h2 className="text-4xl font-bold text-center mb-12">Our Moments</h2>
         <ImageCarousel images={carouselImages} />
       </section>
 
-      {/* Sponsors Section (Now on Home) */}
       <section className="container mx-auto py-16 px-4">
         <h2 className="text-4xl font-bold text-center mb-12">Our Valued Sponsors</h2>
         <div className="flex flex-wrap justify-center items-center gap-8">
-          <Image src="/public/images/sponsor-logo.jpg" alt="Sponsor 1" width={500} height={300} className="object-contain" />
+          <Image src="/images/sponsor-logo.jpg" alt="Sponsor 1" width={500} height={300} className="object-contain" />
         </div>
       </section>
 

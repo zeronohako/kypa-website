@@ -7,7 +7,6 @@ export default function Navbar() {
   return (
     <nav className="bg-blue-800 p-4 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo/Site Title */}
         <Link href="/" className="flex items-center">
           <Image
             src="/images/kypa-logo.jpg" 
@@ -18,16 +17,15 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Navigation Links */}
         <div className="space-x-6">
           <Link href="/about" className="hover:underline">
-            About
+            소개
           </Link>
           <Link href="/join-us" className="hover:underline">
-            Join Us
+            가입하기
           </Link>
           <Link href="/contact" className="hover:underline">
-            Contact
+            연락처
           </Link>
         </div>
 
