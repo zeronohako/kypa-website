@@ -10,11 +10,12 @@ interface ContactBlockProps {
 }
 
 export default function ContactBlock({
-  title = "Contact Us",
-  email = "info@koreaypa.org",
-  phone = "+82-10-1234-5678",
-  address = "Seoul, South Korea"
+  title,
+  email = "info.kypa@gmail.com",
+  phone = "+82-10-2113-2282",
+  address,
 }: ContactBlockProps) {
+
   return (
     <div className="bg-blue-700 text-white p-8 rounded-lg shadow-lg text-center max-w-2xl mx-auto my-12">
       <h2 className="text-3xl font-bold mb-4">{title}</h2>

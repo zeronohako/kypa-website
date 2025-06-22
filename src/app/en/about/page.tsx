@@ -1,6 +1,6 @@
 // src/app/about/page.tsx
 import Image from 'next/image';
-import ContactBlock from '@/components/ContactBlock';
+import ContactBlock from '@/components/kr/ContactBlock';
 import React from 'react';
 
 export default function AboutPage() {

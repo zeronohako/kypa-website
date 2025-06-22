@@ -1,8 +1,8 @@
 // src/app/layout.tsx
 import './globals.css'; // Don't forget Tailwind CSS directives are in here
 import { Inter } from 'next/font/google';
-import Navbar from '@/components/Navbar'; // Import Navbar
-import Footer from '@/components/Footer'; // Import Footer
+import Navbar from '@/components/kr/Navbar'; // Import Navbar
+import Footer from '@/components/kr/Footer'; // Import Footer
 import React from 'react'; // React is implicitly imported, but good practice
 
 const inter = Inter({ subsets: ['latin'] });

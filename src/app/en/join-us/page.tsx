@@ -1,7 +1,7 @@
 // src/app/join-us/page.tsx
 import Image from 'next/image';
-import ContactBlock from '@/components/ContactBlock';
-import ImageCarousel from '@/components/ImageCarousel'; // Use the carousel here too
+import ContactBlock from '@/components/kr/ContactBlock';
+import ImageCarousel from '@/components/kr/ImageCarousel'; // Use the carousel here too
 import React from 'react';
 
 export default function JoinUsPage() {

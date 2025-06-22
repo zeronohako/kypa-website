@@ -1,8 +1,8 @@
 // src/app/page.tsx
 import Image from 'next/image'; // For the hero image
 import Link from 'next/link';
-import ImageCarousel from '@/components/ImageCarousel';
-import ContactBlock from '@/components/ContactBlock';
+import ImageCarousel from '@/components/en/ImageCarousel';
+import ContactBlock from '@/components/en/ContactBlock';
 import React from 'react'; // Explicit import for clarity
 
 export default function HomePage() {
@@ -88,9 +88,8 @@ export default function HomePage() {
       {/* Sponsors Section (Now on Home) */}
       <section className="container mx-auto py-16 px-4">
         <h2 className="text-4xl font-bold text-center mb-12">Our Valued Sponsors</h2>
-        {/* Placeholder for sponsor logos - You'll replace these with actual images */}
         <div className="flex flex-wrap justify-center items-center gap-8">
-          <Image src="/images/sponsor-logo.jpg" alt="Sponsor 1" width={500} height={300} className="object-contain" />
+          <Image src="/public/images/sponsor-logo.jpg" alt="Sponsor 1" width={500} height={300} className="object-contain" />
         </div>
       </section>
 
