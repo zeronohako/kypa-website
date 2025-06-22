@@ -23,6 +23,9 @@ export default function Navbar() {
           <Link href="/about" className="hover:underline">
             About
           </Link>
+          <Link href="/history" className="hover:underline">
+            History
+          </Link>
           <Link href="/join-us" className="hover:underline">
             Join Us
           </Link>

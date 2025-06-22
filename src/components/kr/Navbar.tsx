@@ -25,9 +25,12 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="space-x-6">
+        <div className="space-x-6 flex-wrap">
           <Link href={withLocale('/about')} className="hover:underline">
             소개
+          </Link>
+          <Link href={withLocale('/about')} className="hover:underline">
+            연혁
           </Link>
           <Link href={withLocale('/join-us')} className="hover:underline">
             가입하기
