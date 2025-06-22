@@ -29,7 +29,7 @@ export default function Navbar() {
           <Link href={withLocale('/about')} className="hover:underline">
             소개
           </Link>
-          <Link href={withLocale('/about')} className="hover:underline">
+          <Link href={withLocale('/history')} className="hover:underline">
             연혁
           </Link>
           <Link href={withLocale('/join-us')} className="hover:underline">
