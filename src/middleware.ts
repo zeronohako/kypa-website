@@ -7,6 +7,11 @@ const locales = ['en', 'kr'];
 const defaultLocale = 'en';
 
 function getLocale(request: NextRequest): string {
+  const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value;
+  if (cookieLocale && locales.includes(cookieLocale)) {
+    return cookieLocale;
+  }
+
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => {
     negotiatorHeaders[key] = value;
@@ -15,6 +20,7 @@ function getLocale(request: NextRequest): string {
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
   return match(languages, locales, defaultLocale);
 }
+
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;

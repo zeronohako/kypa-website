@@ -23,8 +23,13 @@ export default function LanguageSwitcher() {
     }
 
     const newPath = segments.join('/');
+
+    // Set cookie for the middleware
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000`; // 1 year
+
     router.push(newPath);
   };
+
 
   const renderButton = (locale: Locale, label: string) => {
     const isActive = currentLocale === locale;
