@@ -1,7 +1,7 @@
 // src/app/join-us/page.tsx
 import Image from 'next/image';
-import ContactBlock from '@/components/kr/ContactBlock';
-import ImageCarousel from '@/components/kr/ImageCarousel'; // Use the carousel here too
+import ContactBlock from '@/components/en/ContactBlock';
+import ImageCarousel from '@/components/en/ImageCarousel'; 
 import React from 'react';
 
 export default function JoinUsPage() {
@@ -28,7 +28,7 @@ export default function JoinUsPage() {
       </section>
 
       {/* Principles Section */}
-      <section className="bg-blue-50 py-12 mb-12 rounded-lg shadow-md">
+      <section className="py-12 mb-12 rounded-lg shadow-md" style={{ backgroundColor: '#ecf7f3' }}>
         <h2 className="text-3xl font-semibold text-center mb-8">Our Principles</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
           <div className="bg-white p-6 rounded-lg shadow text-center">
@@ -67,7 +67,7 @@ export default function JoinUsPage() {
             <textarea id="message" name="message" rows={4} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Tell us about yourself..."></textarea>
           </div>
           <div className="text-center">
-            <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300">
+            <button type="submit" className="bg-[#52b49b] hover:bg-[#48a58d] text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300">
               Submit Application
             </button>
           </div>

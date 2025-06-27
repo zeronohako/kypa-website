@@ -1,6 +1,6 @@
 // src/app/about/page.tsx
 import Image from 'next/image';
-import ContactBlock from '@/components/kr/ContactBlock';
+import ContactBlock from '@/components/en/ContactBlock';
 import React from 'react';
 
 export default function AboutPage() {
@@ -57,28 +57,27 @@ export default function AboutPage() {
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-1.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">Brian</h3>
-            <p className="text-blue-600">Founder, President</p>
+            <p className="text-[#40937e]">Founder, President</p>
             <p className="text-gray-600 mt-2 text-sm">As the founder of KYPA, I lead with a clear vision and direction. All members do their best to contribute to developing KYPA into a community service-oriented sports organization. We strive to improve the quality of life, especially those of socially isolated people. </p>
           </div>
           {/* Member 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-2.jpg" alt="Edward" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">Edward</h3>
-            <p className="text-blue-600">Co-founder, Vice-president</p>
+            <p className="text-[#40937e]">Co-founder, Vice-president</p>
             <p className="text-gray-600 mt-2 text-sm">I&apos;m Edward, a student at Seoul International School. As a co-founder and vice-president, I supervise the Community Outreach Team and Community Volunteer Team. Together with our team officers, we are actively promoting pickleball in Korea and engaging in volunteer initiatives for the underprivileged in our community.</p>
           </div>
           {/* Member 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-3.jpg" alt="Member Name 3" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">Jennie</h3>
-            <p className="text-blue-600">Community Outreach Director</p>
+            <p className="text-[#40937e]">Community Outreach Director</p>
             <p className="text-gray-600 mt-2 text-sm">Hello, I am Jennie. As the Community Outreach Director, I strive to engage our organization with the local community, creating meaningful connections and ensuring that our initiatives positively impact those we serve. Together, we want to make pickleball an accessible sport for youth of all backgrounds while building an inclusive community where everyone can enjoy the sport.</p>
           </div>
           {/* Add more members */}
         </div>
       </section>
 
-      {/* Contact Block - positioned after members */}
       <ContactBlock />
     </div>
   );

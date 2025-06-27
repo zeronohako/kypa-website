@@ -30,8 +30,8 @@ export default function HomePage() {
           <p className="text-black text-xl md:text-2xl mb-8">
             피클볼을 통해 어린이와 청소년을 더 건강하게!
           </p>
-          <Link href="/join-us" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
-            우리 사회의 스포츠 소외 계층에게 스포츠를 통한 건강한 삶을 선물합니다.
+          <Link href="/join-us" className="bg-[#52b49b] hover:bg-[#48a58d] text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+            지금 가입하기 &#x2192;
           </Link>
         </div>
       </section>
@@ -43,8 +43,8 @@ export default function HomePage() {
           대한 유소년 피클볼 협회(KYPA)는 2023년, 대한민국에 피클볼을 더 널리 알리고자 설립되었습니다. KYPA는 국내 경기 기획 및 운영, 피클볼 코칭, 소외계층을 위한 피클볼 교육 봉사를 주요 사업으로 하고 있습니다. KYPA 멤버가 되는 조건은 단 하나,대한민국 7-18세의 유소년이면 됩니다. 피클볼을 통해 몸과 마음을 건강하게, 그리고 우리 사회를 더 건강하게 만들어 주세요!
         </p>
         <div className="text-center mt-8">
-          <Link href="/about" className="text-blue-600 hover:underline text-xl">
-            더 알아보기 →
+          <Link href="/about" className="text-[#40937e] hover:underline text-xl">
+            더 알아보기 &#x2192;
           </Link>
         </div>
       </section>
@@ -80,7 +80,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-16">
-        <h2 className="text-4xl font-bold text-center mb-12">우리들의 순간들</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">갤러리</h2>
         <ImageCarousel images={carouselImages} />
       </section>
 

@@ -17,7 +17,7 @@ export default function ContactBlock({
 }: ContactBlockProps) {
 
   return (
-    <div className="bg-blue-700 text-white p-8 rounded-lg shadow-lg text-center max-w-2xl mx-auto my-12">
+    <div style={{background: 'linear-gradient(90deg, #52b49b 0%, #89ccbb 100%)'}} className="text-white p-8 rounded-lg shadow-lg text-center max-w-2xl mx-auto my-12">
       <h2 className="text-3xl font-bold mb-4">{title}</h2>
       <p className="text-lg mb-2">
         <strong>Email:</strong> <a href={`mailto:${email}`} className="underline">{email}</a>
@@ -26,7 +26,7 @@ export default function ContactBlock({
         <strong>Phone:</strong> {phone}
       </p>
       <p className="text-lg">{address}</p>
-      <Link href="/contact" className="mt-6 inline-block bg-white text-blue-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors">
+      <Link href="/contact" className="mt-6 inline-block bg-white text-[#52b49b] font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors">
         View Full Contact Page
       </Link>
     </div>

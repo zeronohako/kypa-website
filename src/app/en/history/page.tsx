@@ -30,7 +30,7 @@ export default function HistoryPage() {
       <div className="space-y-6 text-left text-gray-700">
         {historyItems.map((item, index) => (
           <div key={index} className="border-b border-gray-300 pb-4">
-            <p className="text-sm font-semibold text-gray-600">{item.date}</p>
+            <p className="text-sm font-semibold text-[#38816f]">{item.date}</p>
             <p className="mt-1">{item.description}</p>
           </div>
         ))}

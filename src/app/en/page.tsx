@@ -29,7 +29,9 @@ export default function HomePage() {
           <p className="text-black text-xl md:text-2xl mb-8">
             Empowering the youth through <strong>Pickleball</strong> !
           </p>
-          <Link href="/join-us" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+          <Link href="/join-us" 
+          className="bg-[#52b49b] hover:bg-[#48a58d] text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300"
+          >
             Join Us Today!
           </Link>
         </div>
@@ -42,7 +44,7 @@ export default function HomePage() {
           The Korea Youth Pickleball Association is a non-profit organization established in 2023. The KYPA committed to promoting the sport of Pickleball among the youth aged 7-18 in Korea. We organize tournaments, provide coaching and training, and engage in community outreach programs to spread the love for Pickleball. Our goal is to foster a sense of camaraderie, sportsmanship, and personal development among young individuals. Discover the exciting world of pickleball with the KYPA. Come and experience the thrill of this fast-growing sport!
         </p>
         <div className="text-center mt-8">
-          <Link href="/about" className="text-blue-600 hover:underline text-xl">
+          <Link href="/about" className="text-[#40937e] hover:underline text-xl">
             Learn More About Us →
           </Link>
         </div>

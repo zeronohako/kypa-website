@@ -44,7 +44,7 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex space-x-4 bg-blue-800 p-2 rounded">
+    <div className="flex space-x-4 p-2 rounded font-medium">
       {renderButton('en', 'EN')}
       {renderButton('kr', 'KR')}
     </div>

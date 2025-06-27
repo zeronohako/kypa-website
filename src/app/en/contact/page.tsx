@@ -7,11 +7,10 @@ export default function ContactPage() {
       <h1 className="text-5xl font-bold text-center mb-10">Get in Touch with Us!</h1>
 
       <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
-        {/* Contact Information */}
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold mb-6">Contact Information</h2>
           <div className="space-y-4 text-lg text-gray-700">
-            <p><strong>Email:</strong> <a href="mailto:info.kypa@gmail.com" className="text-blue-600 hover:underline">info.kypa@gmail.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info.kypa@gmail.com" className="text-[#40937e] hover:underline">info.kypa@gmail.com</a></p>
             <p><strong>Phone:</strong> +82-10-2113-2282</p>
             <p><strong>Address:</strong>
               <br />
@@ -41,7 +40,7 @@ export default function ContactPage() {
               <textarea id="contact-message" name="message" rows={6} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your message..."></textarea>
             </div>
             <div className="text-center">
-              <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:shadow-outline transition duration-300">
+              <button type="submit" className="bg-[#52b49b] hover:bg-[#48a58d] text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:shadow-outline transition duration-300">
                 Send Message
               </button>
             </div>
