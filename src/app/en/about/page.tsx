@@ -1,6 +1,5 @@
 // src/app/about/page.tsx
 import Image from 'next/image';
-import ContactBlock from '@/components/en/ContactBlock';
 import Link from 'next/link'
 import React from 'react';
 
