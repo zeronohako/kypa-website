@@ -1,6 +1,7 @@
 // src/app/about/page.tsx
 import Image from 'next/image';
 import ContactBlock from '@/components/en/ContactBlock';
+import Link from 'next/link'
 import React from 'react';
 
 export default function AboutPage() {
@@ -49,36 +50,41 @@ export default function AboutPage() {
 
       </section>
 
-      {/* Members Section - Designed to reduce gaps */}
+      {/* Members Section */}
       <section className="mb-12">
         <h2 className="text-3xl font-semibold text-center mb-8">Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Member 1 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-1.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
-            <h3 className="text-xl font-bold">Brian</h3>
+            <h3 className="text-xl font-bold">
+              <Link href="/team/brian" className="hover:underline text-black">Brian</Link>
+            </h3>
             <p className="text-[#40937e]">Founder, President</p>
-            <p className="text-gray-600 mt-2 text-sm">As the founder of KYPA, I lead with a clear vision and direction. All members do their best to contribute to developing KYPA into a community service-oriented sports organization. We strive to improve the quality of life, especially those of socially isolated people. </p>
+            <p className="text-gray-800 mt-4 text-base leading-relaxed">As the founder of KYPA, Brian leads with a clear vision to build a community-focused sports organization that improves lives, especially for the socially isolated.</p>
           </div>
           {/* Member 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-2.jpg" alt="Edward" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
-            <h3 className="text-xl font-bold">Edward</h3>
+            <h3 className="text-xl font-bold">
+              <Link href="/team/edward" className="hover:underline text-black">Edward</Link>
+            </h3>
             <p className="text-[#40937e]">Co-founder, Vice-president</p>
-            <p className="text-gray-600 mt-2 text-sm">I&apos;m Edward, a student at Seoul International School. As a co-founder and vice-president, I supervise the Community Outreach Team and Community Volunteer Team. Together with our team officers, we are actively promoting pickleball in Korea and engaging in volunteer initiatives for the underprivileged in our community.</p>
+            <p className="text-gray-800 mt-4 text-base">Edward, co-founder and vice-president at Seoul International School, leads efforts to promote pickleball and support underprivileged communities in Korea.</p>
           </div>
           {/* Member 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-3.jpg" alt="Member Name 3" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
-            <h3 className="text-xl font-bold">Jennie</h3>
+            <h3 className="text-xl font-bold">
+              <Link href="/team/jennie" className="hover:underline text-black">Jennie</Link>
+            </h3>
             <p className="text-[#40937e]">Community Outreach Director</p>
-            <p className="text-gray-600 mt-2 text-sm">Hello, I am Jennie. As the Community Outreach Director, I strive to engage our organization with the local community, creating meaningful connections and ensuring that our initiatives positively impact those we serve. Together, we want to make pickleball an accessible sport for youth of all backgrounds while building an inclusive community where everyone can enjoy the sport.</p>
+            <p className="text-gray-800 mt-4 text-base">Jennie, Community Outreach Director, works to connect the organization with the local community, promoting inclusive pickleball programs that positively impact youth of all backgrounds.</p>
           </div>
           {/* Add more members */}
         </div>
       </section>
 
-      <ContactBlock />
     </div>
   );
 }
