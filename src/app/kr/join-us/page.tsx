@@ -1,14 +1,9 @@
 // src/app/join-us/page.tsx
 import Image from 'next/image';
 import ContactBlock from '@/components/kr/ContactBlock';
-import ImageCarousel from '@/components/kr/ImageCarousel'; // Use the carousel here too
 import React from 'react';
 
 export default function JoinUsPage() {
-  const joinUsCarouselImages = [
-    { src: '/images/join-us-1.jpg', alt: 'Kids practicing pickleball' },
-    { src: '/images/join-us-2.jpg', alt: 'Group photo of young players' },
-  ];
 
   return (
     <div className="container mx-auto py-12 px-4">
@@ -16,7 +11,7 @@ export default function JoinUsPage() {
 
       <section className="mb-12 text-center max-w-3xl mx-auto">
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-          피클볼 애호가이거나 배우고 싶으신가요? 대한유소년피클볼협회에 가입하여 활기차고 성장하는 커뮤니티의 일원이 되세요! 초보자든 경험 많은 선수든 누구에게나 프로그램과 이벤트를 제공합니다.
+          피클볼을 좋아하거나 배우고 싶으신가요? 대한유소년피클볼협회에 가입하여 활기차고 성장하는 커뮤니티의 일원이 되세요! 초보자든 경험 많은 선수든 누구에게나 프로그램과 이벤트를 제공합니다.
         </p>
         <Image
           src="/images/join-us-hero.jpg"
@@ -64,7 +59,7 @@ export default function JoinUsPage() {
           </div>
           <div>
             <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2">가입 동기: </label>
-            <textarea id="message" name="message" rows={4} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder=""></textarea>
+            <textarea id="message" name="message" rows={4} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="피클볼을 너무 좋아합니다!"></textarea>
           </div>
           <div className="text-center">
             <button type="submit" className="bg-[#52b49b] hover:bg-[#48a58d] text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300">
@@ -72,12 +67,6 @@ export default function JoinUsPage() {
             </button>
           </div>
         </form>
-      </section>
-
-      {/* Image Carousel for "extra" images */}
-      <section className="py-12">
-        <h2 className="text-3xl font-bold text-center mb-8"></h2>
-        <ImageCarousel images={joinUsCarouselImages} />
       </section>
 
       <ContactBlock />

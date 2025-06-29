@@ -31,6 +31,8 @@ export default function ImageCarousel({ images = [] }: ImageCarouselProps) {
 
   const currentImage = images[currentIndex];
 
+  console.log('Current image index:', currentIndex);
+
   return (
     <div className="relative w-full max-w-4xl mx-auto h-96 overflow-hidden rounded-lg shadow-xl">
       <Image

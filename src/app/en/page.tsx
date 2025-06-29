@@ -7,8 +7,15 @@ import React from 'react';
 export default function HomePage() {
   const carouselImages = [
     { src: '/images/carousel-1.jpg', alt: 'image1' },
-    { src: '/images/carousel-2.jpg', alt: 'image2' },
-    { src: '/images/carousel-3.jpg', alt: 'image3' },
+    { src: '/images/carousel-2.JPG', alt: 'image2' },
+    { src: '/images/carousel-3.JPG', alt: 'image3' },
+    { src: '/images/carousel-4.jpg', alt: 'image4' },
+    { src: '/images/carousel-5.jpg', alt: 'image5' },
+    { src: '/images/carousel-6.jpg', alt: 'image6' },
+    { src: '/images/carousel-7.jpg', alt: 'image7' },
+    { src: '/images/carousel-8.jpg', alt: 'image8' },
+    { src: '/images/carousel-9.jpg', alt: 'image9' },
+    { src: '/images/carousel-10.jpg', alt: 'image10' },
   ];
 
   return (

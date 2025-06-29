@@ -1,14 +1,9 @@
 // src/app/join-us/page.tsx
 import Image from 'next/image';
 import ContactBlock from '@/components/en/ContactBlock';
-import ImageCarousel from '@/components/en/ImageCarousel'; 
 import React from 'react';
 
 export default function JoinUsPage() {
-  const joinUsCarouselImages = [
-    { src: '/images/join-us-1.jpg', alt: 'Kids practicing pickleball' },
-    { src: '/images/join-us-2.jpg', alt: 'Group photo of young players' },
-  ];
 
   return (
     <div className="container mx-auto py-12 px-4">
@@ -72,12 +67,6 @@ export default function JoinUsPage() {
             </button>
           </div>
         </form>
-      </section>
-
-      {/* Image Carousel for "extra" images */}
-      <section className="py-12">
-        <h2 className="text-3xl font-bold text-center mb-8">Our Fun Moments</h2>
-        <ImageCarousel images={joinUsCarouselImages} />
       </section>
 
       <ContactBlock />
