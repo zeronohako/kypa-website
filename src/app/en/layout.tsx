@@ -1,9 +1,10 @@
 // src/app/layout.tsx
-import './globals.css'; // Don't forget Tailwind CSS directives are in here
+import './globals.css'; 
 import { Inter } from 'next/font/google';
-import Navbar from '@/components/en/Navbar'; // Import Navbar
-import Footer from '@/components/en/Footer'; // Import Footer
-import React from 'react'; // React is implicitly imported, but good practice
+import Navbar from '@/components/en/Navbar'; 
+import Footer from '@/components/en/Footer'; 
+import React from 'react'; 
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,11 +21,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar /> {/* Your Navbar component */}
-        <main className="min-h-screen"> {/* Main content area */}
-          {children} {/* This is where your page content will be rendered */}
+        <Navbar /> 
+        <main className="min-h-screen">
+          {children} 
+          <Analytics />
         </main>
-        <Footer /> {/* Your Footer component */}
+        <Footer />
       </body>
     </html>
   );
