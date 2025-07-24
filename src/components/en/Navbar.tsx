@@ -26,6 +26,9 @@ export default function Navbar() {
           <Link href="/history" className="hover:text-yellow-100 transition-colors duration-200">
             History
           </Link>
+          <Link href="/news" className="hover:text-yellow-100 transition-colors duration-200">
+            News
+          </Link>
           <Link href="/join-us" className="hover:text-yellow-100 transition-colors duration-200">
             Join Us
           </Link>
