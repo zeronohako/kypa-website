@@ -16,7 +16,7 @@ export default function NationalYouthPickleball2025() {
       </Link>
 
       <h1 className="text-4xl font-extrabold mb-6 text-gray-900">
-        제1회 "국경 없는 패들": 한국 x 나이지리아 피클볼 우정 축제
+        제1회 &quot;국경 없는 패들&quot;: 한국 x 나이지리아 피클볼 우정 축제
       </h1>
       <p className="text-gray-500 mb-10 italic">2025년 8월 3일</p>
 
@@ -28,7 +28,7 @@ export default function NationalYouthPickleball2025() {
 
       <div className="space-y-6 text-gray-800 leading-relaxed text-base">
         <p>
-            KYPA는 나이지리아 피클볼 연맹(NPF)과 공동 주최하는 제1회 "국경 없는 패들" 한국 x 나이지리아 피클볼 우정 축제를 2025년 11월 한국에서 개최하게 되어 자랑스럽게 생각합니다!
+            KYPA는 나이지리아 피클볼 연맹(NPF)과 공동 주최하는 제1회 &quot;국경 없는 패들&quot; 한국 x 나이지리아 피클볼 우정 축제를 2025년 11월 한국에서 개최하게 되어 자랑스럽게 생각합니다!
 
         </p>
         <p>
