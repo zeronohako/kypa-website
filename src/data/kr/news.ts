@@ -18,4 +18,12 @@ export const newsPosts: NewsPost[] = [
     image: '/images/newsbanner-1.jpg',
     slug: 'deaf-pickleball-festival-korea-2025',
   },
+  {
+    id: '2',
+    title: '제1회 "국경 없는 패들": 한국 x 나이지리아 피클볼 우정 축제',
+    date: '2025-08-03',
+    summary: '제1회 “국경 없는 패들” 페스티벌은 한국과 나이지리아가 함께한 피클볼을 통한 우정과 문화 교류의 축제였습니다.',
+    image: '/images/newsbanner-2.jpg',
+    slug: 'paddles-without-borders-korea-nigeria-pickleball-festival',
+  },
 ];

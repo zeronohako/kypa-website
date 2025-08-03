@@ -1,11 +1,8 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import Link from 'next/link'
 
 export default function NationalYouthPickleball2025() {
-
-  const router = useRouter();
   
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 mt-20 bg-white rounded-xl shadow-lg">

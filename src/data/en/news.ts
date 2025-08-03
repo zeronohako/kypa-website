@@ -18,4 +18,12 @@ export const newsPosts: NewsPost[] = [
     image: '/images/newsbanner-1.jpg',
     slug: 'deaf-pickleball-festival-korea-2025',
   },
+  {
+    id: '2',
+    title: 'The 1st “Paddles Without Borders”: Korea x Nigeria Pickleball Friendship Festival',
+    date: '2025-08-03',
+    summary: 'The first-ever "Paddles Without Borders" festival brought together Korea and Nigeria in a vibrant celebration of friendship and cultural exchange through pickleball.',
+    image: '/images/newsbanner-2.jpg',
+    slug: 'paddles-without-borders-korea-nigeria-pickleball-festival',
+  },
 ];
