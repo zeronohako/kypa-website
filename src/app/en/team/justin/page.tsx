@@ -49,7 +49,7 @@ export default function JustinPage() {
             className="w-full h-[500px] object-contian rounded-lg shadow-lg mb-4"
             preload="metadata"
             >
-              <source src="/videos/Justin-intro.mp4" type="video/mp4" />
+              <source src="/videos/justin-intro.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p className="text-md text-gray-700 leading-relaxed">
