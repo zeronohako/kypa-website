@@ -80,6 +80,15 @@ export default function AboutPage() {
           </div>
           {/* Member 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <Image src="/images/member-4.jpg" alt="Member Name 4" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+            <h3 className="text-xl font-bold">
+              <Link href={withLocale('/team/issac')} className="hover:underline text-black">Issac</Link>
+            </h3>
+            <p className="text-[#40937e]">공동설립자 및 부회장</p>
+            <p className="text-gray-800 mt-4 text-base">Issac은 공동 창립자이자 부대표로서, 모든 연령과 배경의 사람들이 건강을 증진하고 공동체와 연결되며 포용성을 느낄 수 있도록 피클볼의 접근성을 높이는 다양한 이니셔티브를 주도하고 있습니다.</p>
+          </div>
+          {/* Member 4 */}
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-3.jpg" alt="Member Name 3" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">
               <Link href={withLocale('/team/jennie')} className="hover:underline text-black">Jennie</Link>
@@ -87,14 +96,14 @@ export default function AboutPage() {
             <p className="text-[#40937e]">커뮤니티 아웃리치 디렉터</p>
             <p className="text-gray-800 mt-4 text-base">Jennie는 커뮤니티 아웃리치 디렉터로서, 지역사회와 조직을 연결하고 모든 배경의 청소년들에게 긍정적인 영향을 주는 포용적인 피클볼 프로그램을 활성화하는 데 힘쓰고 있습니다.</p>
           </div>
-          {/* Member 4 */}
+          {/* Member 5 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <Image src="/images/member-4.jpg" alt="Member Name 4" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+            <Image src="/images/member-5.jpg" alt="Member Name 4" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">
-              <Link href={withLocale('/team/issac')} className="hover:underline text-black">Issac</Link>
+              <Link href={withLocale('/team/justin')} className="hover:underline text-black">Justin</Link>
             </h3>
-            <p className="text-[#40937e]">공동설립자 및 부회장</p>
-            <p className="text-gray-800 mt-4 text-base">Issac은 공동 창립자이자 부대표로서, 모든 연령과 배경의 사람들이 건강을 증진하고 공동체와 연결되며 포용성을 느낄 수 있도록 피클볼의 접근성을 높이는 다양한 이니셔티브를 주도하고 있습니다.</p>
+            <p className="text-[#40937e]">커뮤니티 자원봉사 디렉터</p>
+            <p className="text-gray-800 mt-4 text-base">Justin은 학생, 가족, 지역 단체 등 피클볼이라는 재미있고 빠르게 성장하는 스포츠에 함께하고자 하는 모든 사람들과의 연결 고리를 만들어갑니다.</p>
           </div>
         </div>
       </section>

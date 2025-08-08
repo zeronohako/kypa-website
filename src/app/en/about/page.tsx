@@ -73,6 +73,15 @@ export default function AboutPage() {
           </div>
           {/* Member 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <Image src="/images/member-4.jpg" alt="Member Name 4" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+            <h3 className="text-xl font-bold">
+              <Link href="/team/issac" className="hover:underline text-black">Issac</Link>
+            </h3>
+            <p className="text-[#40937e]">Co-founder, Vice-president</p>
+            <p className="text-gray-800 mt-4 text-base">Isaac, Co-Founder and Vice President, leads initiatives to make pickleball more accessible, promoting health, community connection, and inclusivity across all ages and backgrounds.</p>
+          </div>
+          {/* Member 4 */}
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-3.jpg" alt="Member Name 3" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">
               <Link href="/team/jennie" className="hover:underline text-black">Jennie</Link>
@@ -80,14 +89,14 @@ export default function AboutPage() {
             <p className="text-[#40937e]">Community Outreach Director</p>
             <p className="text-gray-800 mt-4 text-base">Jennie, Community Outreach Director, works to connect the organization with the local community, promoting inclusive pickleball programs that positively impact youth of all backgrounds.</p>
           </div>
-          {/* Member 4 */}
+          {/* Member 5 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <Image src="/images/member-4.jpg" alt="Member Name 4" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+            <Image src="/images/member-5.jpg" alt="Member Name 5" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">
-              <Link href="/team/issac" className="hover:underline text-black">Issac</Link>
+              <Link href="/team/justin" className="hover:underline text-black">Jusin</Link>
             </h3>
-            <p className="text-[#40937e]">Co-founder, Vice-president</p>
-            <p className="text-gray-800 mt-4 text-base">Isaac, Co-Founder and Vice President, leads initiatives to make pickleball more accessible, promoting health, community connection, and inclusivity across all ages and backgrounds.</p>
+            <p className="text-[#40937e]">Community Volunteer Director</p>
+            <p className="text-gray-800 mt-4 text-base">Justin builds connections-between students, families, local organizations, and anyone who wants to be a part of this fun, fast-growing sport.</p>
           </div>
         </div>
       </section>
