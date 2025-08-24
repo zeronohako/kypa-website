@@ -38,7 +38,7 @@ export default function HomePage() {
           className="object-cover -z-10"
           priority
         />
-        <div className="z-10 bg-white p-8 rounded-lg mx-4 shadow-lg">
+        <div className="z-10 bg-white p-8 rounded-lg mx-4 shadow-lg mt-50">
           <h1 className="text-black text-4xl md:text-6xl font-extrabold mb-4">
             대한 유소년 피클 협회 
           </h1>
@@ -57,15 +57,46 @@ export default function HomePage() {
         <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto">
           대한 유소년 피클볼 협회(KYPA)는 2023년, 대한민국에 피클볼을 더 널리 알리고자 설립되었습니다. KYPA는 국내 경기 기획 및 운영, 피클볼 코칭, 소외계층을 위한 피클볼 교육 봉사를 주요 사업으로 하고 있습니다. KYPA 멤버가 되는 조건은 단 하나, 대한민국 7-18세의 유소년이면 됩니다. 피클볼을 통해 몸과 마음을 건강하게, 그리고 우리 사회를 더 건강하게 만들어 주세요!
         </p>
-        <div className="text-center mt-8">
+        <div className="text-center mt-6">
           <Link href={withLocale('/about')} className="text-[#40937e] hover:underline text-xl">
             더 알아보기 &#x2192;
           </Link>
         </div>
       </section>
 
-      {/* Programs Section */}
+      {/* News Section */}
       <section className="bg-gray-100 py-16 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">최근 소식</h2>
+        <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all p-4">
+          <img 
+            src="/images/banner_image.JPG" 
+            alt="" 
+            className="mx-auto max-w-xs object-contain"
+          />
+          <div className="mt-4">
+            <Link href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`}>
+              <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
+                제1회 &quot;국경 없는 패들&quot;: 한국 x 나이지리아 피클볼 우정 축제
+              </h3>
+            </Link>
+            <p className="text-sm text-gray-500">August 3, 2025</p>
+            <p className="mt-2 text-sm text-gray-700 line-clamp-3">
+              제1회 “국경 없는 패들” 페스티벌은 한국과 나이지리아가 함께한 피클볼을 통한 우정과 문화 교류의 축제였습니다.
+            </p>
+            <Link 
+              href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`} 
+              className="inline-block mt-4 text-[#40937e] hover:underline text-sm"
+            >
+              더 알아보기 →
+            </Link>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      {/* Programs Section */}
+      <section className="py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">우리의 프로그램</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -94,7 +125,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="bg-gray-100 py-16">
         <h2 className="text-4xl font-bold text-center mb-12">갤러리</h2>
         <ImageCarousel images={carouselImages} />
       </section>

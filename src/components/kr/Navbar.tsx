@@ -2,11 +2,13 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 import LanguageSwitcher from '@/components/en/LanguageSwitcher';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const currentLocale = pathname?.split('/')[1] ?? 'en'; // fallback to 'en'
 
@@ -25,28 +27,59 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="space-x-6 text-lg font-medium">
-          <Link href={withLocale('/about')} className="hover:text-yellow-100 transition-colors duration-200">
+{/* Desktop Navigation */}
+        <div className="hidden md:flex space-x-6 text-lg font-medium">
+          <Link href={withLocale("/about")} className="hover:text-yellow-100 transition-colors duration-200">
             소개
           </Link>
-          <Link href={withLocale('/history')} className="hover:text-yellow-100 transition-colors duration-200">
+          <Link href={withLocale("/history")} className="hover:text-yellow-100 transition-colors duration-200">
             연혁
           </Link>
-          <Link href={withLocale('/news')} className="hover:text-yellow-100 transition-colors duration-200">
+          <Link href={withLocale("/news")} className="hover:text-yellow-100 transition-colors duration-200">
             소식
           </Link>
-          <Link href={withLocale('/join-us')} className="hover:text-yellow-100 transition-colors duration-200">
+          <Link href={withLocale("/join-us")} className="hover:text-yellow-100 transition-colors duration-200">
             가입
           </Link>
-          <Link href={withLocale('/contact')} className="hover:text-yellow-100 transition-colors duration-200">
+          <Link href={withLocale("/contact")} className="hover:text-yellow-100 transition-colors duration-200">
             연락처
           </Link>
         </div>
 
-        <div>
+        {/* Language Switcher (always visible on desktop, inside dropdown on mobile) */}
+        <div className="hidden md:block">
           <LanguageSwitcher />
         </div>
+
+        {/* Mobile Menu Button */}
+        <button className="md:hidden" onClick={() => setOpen(!open)}>
+          {open ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      {/* Mobile Dropdown */}
+      {open && (
+        <div className="md:hidden bg-[#52b49b] text-white px-4 py-4 space-y-4 text-lg font-medium shadow-md">
+          <Link href={withLocale('/about')} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
+            소개
+          </Link>
+          <Link href={withLocale("/history")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
+            연혁
+          </Link>
+          <Link href={withLocale("/news")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
+            소식
+          </Link>
+          <Link href={withLocale("/join-us")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
+            가입
+          </Link>
+          <Link href={withLocale("/contact")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
+            연락처
+          </Link>
+
+          {/* Language Switcher in mobile menu */}
+          <LanguageSwitcher />
+        </div>
+      )}
     </nav>
   );
 }

@@ -29,7 +29,7 @@ export default function HomePage() {
           className="object-cover -z-10"
           priority
         />
-        <div className="z-10 bg-white p-8 rounded-lg mx-4 shadow-lg">
+        <div className="z-10 bg-white p-8 rounded-lg mx-4 shadow-lg mt-50">
           <h1 className="text-black text-4xl md:text-6xl font-extrabold mb-4">
             Korea Youth Pickleball Association
           </h1>
@@ -57,8 +57,39 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Programs Section */}
+      {/* News Section */}
       <section className="bg-gray-100 py-16 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">Recent News</h2>
+        <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all p-4">
+          <img 
+            src="/images/banner_image.JPG" 
+            alt="" 
+            className="mx-auto max-w-xs object-contain"
+          />
+          <div className="mt-4">
+            <Link href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`}>
+              <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
+                The 1st “Paddles Without Borders”: Korea x Nigeria Pickleball Friendship Festival
+              </h3>
+            </Link>
+            <p className="text-sm text-gray-500">August 3, 2025</p>
+            <p className="mt-2 text-sm text-gray-700 line-clamp-3">
+              The first-ever "Paddles Without Borders" festival brought together Korea and Nigeria in a vibrant celebration of friendship and cultural exchange through pickleball.
+            </p>
+            <Link 
+              href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`} 
+              className="inline-block mt-4 text-[#40937e] hover:underline text-sm"
+            >
+              Read More →
+            </Link>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      {/* Programs Section */}
+      <section className="bg-white py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Our Programs</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -87,7 +118,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="bg-gray-100 py-16">
         <h2 className="text-4xl font-bold text-center mb-12">Our Moments</h2>
         <ImageCarousel images={carouselImages} />
       </section>
