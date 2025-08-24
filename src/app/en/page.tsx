@@ -75,7 +75,7 @@ export default function HomePage() {
             </Link>
             <p className="text-sm text-gray-500">August 3, 2025</p>
             <p className="mt-2 text-sm text-gray-700 line-clamp-3">
-              The first-ever "Paddles Without Borders" festival brought together Korea and Nigeria in a vibrant celebration of friendship and cultural exchange through pickleball.
+              The first-ever &quot;Paddles Without Borders&quot; festival brought together Korea and Nigeria in a vibrant celebration of friendship and cultural exchange through pickleball.
             </p>
             <Link 
               href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`} 
