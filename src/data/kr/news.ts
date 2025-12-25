@@ -26,4 +26,12 @@ export const newsPosts: NewsPost[] = [
     image: '/images/newsbanner-2.jpg',
     slug: 'paddles-without-borders-korea-nigeria-pickleball-festival',
   },
+  {
+    id: '3',
+    title: 'FALL 선수 초청 피클볼 페스타',
+    date: '2025-11-05',
+    summary: '11월 22~23일 서울·경기에서 국제 선수초청 피클볼페스타가 열리며, 참가 접수는 11월 2~17일 진행됩니다.',
+    image: '/images/fall-international-pickleball-festival/poster_kr.jpg',
+    slug: 'fall-international-pickleball-festival',
+  },
 ];
