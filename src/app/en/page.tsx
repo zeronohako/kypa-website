@@ -63,22 +63,22 @@ export default function HomePage() {
           <h2 className="text-4xl font-bold text-center mb-12">Recent News</h2>
         <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all p-4">
           <img 
-            src="/images/fall-international-pickleball-festival/poster_en.jpg" 
+            src="/images/newsbanner-4.jpg" 
             alt="" 
-            className="mx-auto max-w-xs object-contain"
+            className="rounded-lg shadow-md w-full mb-12 object-cover max-h-96"
           />
           <div className="mt-4">
-            <Link href={`/news/fall-international-pickleball-festival`}>
+            <Link href={`/news/hanriver`}>
               <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
-                Fall International Pickleball Festival
+                American Celebrities Are Crazy About Pickleball at the Han River… Citizens are Looking Forward to It
               </h3>
             </Link>
-            <p className="text-sm text-gray-500">November 5, 2025</p>
+            <p className="text-sm text-gray-500">December 22, 2025</p>
             <p className="mt-2 text-sm text-gray-700 line-clamp-3">
-              An international six-team pickleball festival will be held Nov 22-23, 2025 in the Seoul-Gyeonggi area, with registration open Nov 2-17.
+              Seoul is converting a low used soccer field at Gwangnaru Han River Park into 14 outdoor pickleball courts, the Han River first and Korea largest public facility, set to open in March 2026 as part of Mayor Oh Se hoon Healthy Seoul initiative.
             </p>
             <Link 
-              href={`/news/fall-international-pickleball-festival`} 
+              href={`/news/hanriver`} 
               className="inline-block mt-4 text-[#40937e] hover:underline text-sm"
             >
               Read More →
