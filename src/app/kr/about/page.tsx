@@ -82,10 +82,10 @@ export default function AboutPage() {
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-4.jpg" alt="Member Name 4" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">
-              <Link href={withLocale('/team/issac')} className="hover:underline text-black">Issac</Link>
+              <Link href={withLocale('/team/issac')} className="hover:underline text-black">Isaac</Link>
             </h3>
             <p className="text-[#40937e]">공동설립자 및 부회장</p>
-            <p className="text-gray-800 mt-4 text-base">Issac은 공동 창립자이자 부대표로서, 모든 연령과 배경의 사람들이 건강을 증진하고 공동체와 연결되며 포용성을 느낄 수 있도록 피클볼의 접근성을 높이는 다양한 이니셔티브를 주도하고 있습니다.</p>
+            <p className="text-gray-800 mt-4 text-base">Isaac은 공동 창립자이자 부대표로서, 모든 연령과 배경의 사람들이 건강을 증진하고 공동체와 연결되며 포용성을 느낄 수 있도록 피클볼의 접근성을 높이는 다양한 이니셔티브를 주도하고 있습니다.</p>
           </div>
           {/* Member 4 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
