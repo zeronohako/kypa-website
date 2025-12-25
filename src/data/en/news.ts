@@ -36,7 +36,7 @@ export const newsPosts: NewsPost[] = [
   },
   {
     id: '4',
-    title: 'American Celebrities Are Crazy About ‘Pickleball’ at the Han River… Citizens “Looking Forward to It”',
+    title: 'American Celebrities Are Crazy About Pickleball at the Han River… Citizens are Looking Forward to It',
     date: '2025-12-22',
     summary: 'Seoul is converting a low used soccer field at Gwangnaru Han River Park into 14 outdoor pickleball courts, the Han River first and Korea largest public facility, set to open in March 2026 as part of Mayor Oh Se hoon Healthy Seoul initiative.',
     image: '/images/newsbanner-4.jpg',
