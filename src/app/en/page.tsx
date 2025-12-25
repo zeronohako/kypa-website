@@ -63,22 +63,22 @@ export default function HomePage() {
           <h2 className="text-4xl font-bold text-center mb-12">Recent News</h2>
         <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all p-4">
           <img 
-            src="/images/banner_image.JPG" 
+            src="/images/fall-international-pickleball-festival/poster_en.jpg" 
             alt="" 
             className="mx-auto max-w-xs object-contain"
           />
           <div className="mt-4">
-            <Link href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`}>
+            <Link href={`/news/fall-international-pickleball-festival`}>
               <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
-                The 1st “Paddles Without Borders”: Korea x Nigeria Pickleball Friendship Festival
+                Fall International Pickleball Festival
               </h3>
             </Link>
-            <p className="text-sm text-gray-500">August 3, 2025</p>
+            <p className="text-sm text-gray-500">November 5, 2025</p>
             <p className="mt-2 text-sm text-gray-700 line-clamp-3">
-              The first-ever &quot;Paddles Without Borders&quot; festival brought together Korea and Nigeria in a vibrant celebration of friendship and cultural exchange through pickleball.
+              An international six-team pickleball festival will be held Nov 22-23, 2025 in the Seoul-Gyeonggi area, with registration open Nov 2-17.
             </p>
             <Link 
-              href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`} 
+              href={`/news/fall-international-pickleball-festival`} 
               className="inline-block mt-4 text-[#40937e] hover:underline text-sm"
             >
               Read More →

@@ -16,14 +16,14 @@ export default function NationalYouthPickleball2025() {
       </Link>
 
       <h1 className="text-4xl font-extrabold mb-6 text-gray-900">
-        2025년 제1회 한국 농인 피클볼 페스티벌 행사
+        FALL 선수 초청 피클볼 페스타
       </h1>
       <p className="text-gray-500 mb-10 italic">2025년 11월 5일</p>
-
+    
       <img
         src="/images/fall-international-pickleball-festival/poster_kr.jpg"
         alt="image"
-        className="rounded-lg shadow-md w-full mb-12 object-cover max-h-96"
+        className="rounded-lg shadow-md w-full mb-12 object-cover h-full"
       />
 
       <div className="space-y-6 text-gray-800 leading-relaxed text-base">
