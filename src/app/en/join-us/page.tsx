@@ -2,43 +2,9 @@
 import Image from "next/image";
 import ContactBlock from "@/components/en/ContactBlock";
 import React from "react";
-import { Resend } from "resend";
-import { redirect } from "next/navigation";
+import { submitApplication } from "./action";
 
 export default function JoinUsPage() {
-  async function submitApplication(formData: FormData) {
-    "use server";
-
-    const name = String(formData.get("name") || "").trim();
-    const email = String(formData.get("email") || "").trim();
-    const school = String(formData.get("school") || "").trim();
-    const message = String(formData.get("message") || "").trim();
-
-    if (!name || !email) {
-      throw new Error("Missing required fields");
-    }
-
-    const resend = new Resend(process.env.RESEND_API_KEY);
-
-    const { error } = await resend.emails.send({
-      from: "Korea Youth Pickleball <apply@koreaypa.org>",  
-      to: ["yunsuhan00107@gmail.com"], 
-      replyTo: email,
-      subject: `Join Us application: ${name}`,
-      text:
-        `Name: ${name}\n` +
-        `Email: ${email}\n` +
-        `School: ${school}\n\n` +
-        `Why join:\n${message}\n`,
-    });
-
-    if (error) {
-      throw new Error("Failed to send email");
-    }
-
-    redirect("/join-us/thanks");
-  }
-
   return (
     <div className="container mx-auto py-12 px-4">
       <h1 className="text-5xl font-bold text-center mb-10">Join Our Community!</h1>

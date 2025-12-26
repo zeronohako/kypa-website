@@ -30,5 +30,5 @@ export async function submitApplication(formData: FormData) {
     throw new Error(error.message ?? "Resend failed");
   }
 
-  redirect("/join-us/thanks");
+  redirect("/en/join-us/thanks");
 }
