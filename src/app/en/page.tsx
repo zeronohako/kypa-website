@@ -29,7 +29,7 @@ export default function HomePage() {
           className="object-cover -z-10"
           priority
         />
-        <div className="z-10 bg-white p-3 rounded-lg mx-4 shadow-lg mt-50 md:p-6 md:mb-0">
+        <div className="hidden md:block z-10 bg-white p-3 rounded-lg mx-4 shadow-lg mt-50 md:p-6 md:mb-0">
           <h1 className="text-black text-4xl md:text-6xl font-extrabold mb-4">
             Korea Youth Pickleball Association
           </h1>
