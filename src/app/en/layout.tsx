@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/next"
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Korea YPA - Youth Pickleball Association',
+  title: 'Korea Youth Pickleball Association (KYPA)',
   description: 'Official Website of Korea Youth Pickleball Association',
 };
 
