@@ -95,7 +95,7 @@ export default function HomePage() {
         </div>
         <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all p-4">
           <img 
-            src="/images/1.gif" 
+            src="/images/fall-international-pickleball-festival/poster_kr.jpg" 
             alt="" 
             className="rounded-lg shadow-md w-full mb-12 object-cover object-top max-h-96"
           />
