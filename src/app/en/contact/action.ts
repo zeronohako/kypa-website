@@ -18,7 +18,7 @@ export async function submitContact(formData: FormData) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   const { error } = await resend.emails.send({
-    from: "Korea Youth Pickleball <contact@koreaypa.org>",
+    from: "Korea Youth Pickleball <apply@koreaypa.org>",
     to: ["info.kypa@gmail.com"],
     replyTo: email,
     subject: `Contact: ${subject}`,

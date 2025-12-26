@@ -19,7 +19,7 @@ export async function submitApplication(formData: FormData) {
 
   const { error } = await resend.emails.send({
     from: "Korea Youth Pickleball <apply@koreaypa.org>",
-    to: ["yunsuhan00107@gmail.com"],
+    to: ["info.kypa@gmail.com"],
     replyTo: email,
     subject: `Join Us application: ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nSchool: ${school}\n\nWhy join:\n${message}\n`,
