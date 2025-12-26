@@ -36,7 +36,7 @@ export default function JoinUsPage() {
       throw new Error("Failed to send email");
     }
 
-    redirect("/join-us/");
+    redirect("/join-us/thanks");
   }
 
   return (
