@@ -78,12 +78,12 @@ export default function HomePage() {
           <div className="mt-4">
             <Link href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`}>
               <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
-                제1회 "국경 없는 패들": 한국 x 나이지리아 피클볼 우정 축제
+                제1회 &quot;국경 없는 패들&quot;: 한국 x 나이지리아 피클볼 우정 축제
               </h3>
             </Link>
             <p className="text-sm text-gray-500">August 1, 2025</p>
             <p className="mt-2 text-sm text-gray-700 line-clamp-3">
-              제1회 “국경 없는 패들” 페스티벌은 한국과 나이지리아가 함께한 피클볼을 통한 우정과 문화 교류의 축제였습니다.
+              제1회 &quot;국경 없는 패들&quot; 페스티벌은 한국과 나이지리아가 함께한 피클볼을 통한 우정과 문화 교류의 축제였습니다.
             </p>  
             <Link 
               href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`} 
