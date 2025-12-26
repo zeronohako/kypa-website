@@ -61,11 +61,36 @@ export default function HomePage() {
       <section className="bg-gray-100 py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Recent News</h2>
+          <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all p-4">
           <img 
-            src="/images/newsbanner-4.jpg" 
+            src="/images/banner_image.JPG" 
             alt="" 
-            className="rounded-lg shadow-md w-full mb-12 object-cover max-h-96"
+            className="rounded-lg shadow-md w-full mb-12 object-cover object-top max-h-96"
+          />
+          <div className="mt-4">
+            <Link href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`}>
+              <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
+                The 1st “Paddles Without Borders”: Korea x Nigeria Pickleball Friendship Festival
+              </h3>
+            </Link>
+            <p className="text-sm text-gray-500">August 1, 2025</p>
+            <p className="mt-2 text-sm text-gray-700 line-clamp-3">
+              The first-ever "Paddles Without Borders" festival brought together Korea and Nigeria in a vibrant celebration of friendship and cultural exchange through pickleball.
+            </p>  
+            <Link 
+              href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`} 
+              className="inline-block mt-4 text-[#40937e] hover:underline text-sm"
+            >
+              Read More →
+            </Link>
+          </div>
+        </div>
+        <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all p-4">
+          <img 
+            src="/images/1.gif" 
+            alt="" 
+            className="rounded-lg shadow-md w-full mb-12 object-cover object-top max-h-96"
           />
           <div className="mt-4">
             <Link href={`/news/hanriver`}>
@@ -85,7 +110,9 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
+          </div>
       </div>
+      
       </section>
 
       {/* Programs Section */}

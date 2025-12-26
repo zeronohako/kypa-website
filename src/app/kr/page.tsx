@@ -68,11 +68,36 @@ export default function HomePage() {
       <section className="bg-gray-100 py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">최근 소식</h2>
+          <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all p-4">
           <img 
-            src="/images/fall-international-pickleball-festival/poster_kr.jpg" 
+            src="/images/banner_image.JPG" 
             alt="" 
-            className="mx-auto max-w-xs object-contain"
+            className="rounded-lg shadow-md w-full mb-12 object-cover object-top max-h-96"
+          />
+          <div className="mt-4">
+            <Link href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`}>
+              <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
+                제1회 "국경 없는 패들": 한국 x 나이지리아 피클볼 우정 축제
+              </h3>
+            </Link>
+            <p className="text-sm text-gray-500">August 1, 2025</p>
+            <p className="mt-2 text-sm text-gray-700 line-clamp-3">
+              제1회 “국경 없는 패들” 페스티벌은 한국과 나이지리아가 함께한 피클볼을 통한 우정과 문화 교류의 축제였습니다.
+            </p>  
+            <Link 
+              href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`} 
+              className="inline-block mt-4 text-[#40937e] hover:underline text-sm"
+            >
+              Read More →
+            </Link>
+          </div>
+        </div>
+        <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all p-4">
+          <img 
+            src="/images/1.gif" 
+            alt="" 
+            className="rounded-lg shadow-md w-full mb-12 object-cover object-top max-h-96"
           />
           <div className="mt-4">
             <Link href={`/news/fall-international-pickleball-festival`}>
@@ -82,17 +107,19 @@ export default function HomePage() {
             </Link>
             <p className="text-sm text-gray-500">November 5, 2025</p>
             <p className="mt-2 text-sm text-gray-700 line-clamp-3">
-              11월 22~23일 서울·경기에서 국제 선수초청 피클볼페스타가 열리며, 참가 접수는 11월 2~17일 진행됩니다.
+             11월 22~23일 서울·경기에서 국제 선수초청 피클볼페스타가 열리며, 참가 접수는 11월 2~17일 진행됩니다.
             </p>
             <Link 
               href={`/news/fall-international-pickleball-festival`} 
               className="inline-block mt-4 text-[#40937e] hover:underline text-sm"
             >
-              더 알아보기 →
+              Read More →
             </Link>
           </div>
         </div>
+          </div>
       </div>
+      
       </section>
 
       {/* Programs Section */}
