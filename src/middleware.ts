@@ -22,7 +22,7 @@ export function middleware(request: NextRequest) {
   const isServerAction =
     request.headers.has("next-action") || request.headers.has("Next-Action");
 
-  if (isServerAction) {
+  if (request.method === "POST" || isServerAction) {
     return NextResponse.next();
   }
 
@@ -39,7 +39,6 @@ export function middleware(request: NextRequest) {
   url.pathname = `/${locale}${pathname}`;
   return NextResponse.redirect(url);
 }
-
 
 export const config = {
   matcher: ["/((?!_next/static|_next/image|favicon.ico|images|icons|fonts|videos).*)"],

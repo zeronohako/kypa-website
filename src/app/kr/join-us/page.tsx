@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import ContactBlock from '@/components/kr/ContactBlock';
 import React from 'react';
+import { submitApplication } from './action';
 
 export default function JoinUsPage() {
 
@@ -44,7 +45,8 @@ export default function JoinUsPage() {
       {/* Join Form (Placeholder) */}
       <section className="mb-12 max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-semibold text-center mb-6">지금 바로 참여하세요!</h2>
-        <form className="space-y-4">
+        <form action={submitApplication} className="space-y-4">
+          <input type="text" name="company" tabIndex={-1} autoComplete="off" className="hidden" />
           <div>
             <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">이름: </label>
             <input type="text" id="name" name="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="이름" required />
