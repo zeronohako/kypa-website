@@ -21,8 +21,8 @@ export default function JoinUsPage() {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const { error } = await resend.emails.send({
-      from: "Korea Youth Pickleball <apply@koreaypa.org>", // replace with your verified sender/domain
-      to: ["yunsuhan00107@gmail.com"], // where you want to receive applications
+      from: "Korea Youth Pickleball <apply@koreaypa.org>",  
+      to: ["yunsuhan00107@gmail.com"], 
       replyTo: email,
       subject: `Join Us application: ${name}`,
       text:
