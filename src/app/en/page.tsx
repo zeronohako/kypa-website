@@ -71,12 +71,12 @@ export default function HomePage() {
           <div className="mt-4">
             <Link href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`}>
               <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
-                The 1st “Paddles Without Borders”: Korea x Nigeria Pickleball Friendship Festival
+                The 1st &quot;Paddles Without Borders&quot;: Korea x Nigeria Pickleball Friendship Festival
               </h3>
             </Link>
             <p className="text-sm text-gray-500">August 1, 2025</p>
             <p className="mt-2 text-sm text-gray-700 line-clamp-3">
-              The first-ever "Paddles Without Borders" festival brought together Korea and Nigeria in a vibrant celebration of friendship and cultural exchange through pickleball.
+              The first-ever &quot;Paddles Without Borders&quot; festival brought together Korea and Nigeria in a vibrant celebration of friendship and cultural exchange through pickleball.
             </p>  
             <Link 
               href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`} 
