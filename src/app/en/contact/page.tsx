@@ -24,7 +24,14 @@ export default function ContactPage() {
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold mb-6">Send Us a Message</h2>
           <form action={submitContact} className="space-y-6">
-            <input type="text" name="company" tabIndex={-1} autoComplete="off" className="hidden" />
+            <input
+              type="text"
+              name="website"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              className="hidden"
+            />
             <div>
               <label htmlFor="contact-name" className="block text-gray-700 text-sm font-bold mb-2">Your Name:</label>
               <input type="text" id="contact-name" name="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Full Name" required />

@@ -4,8 +4,8 @@ import { Resend } from "resend";
 import { redirect } from "next/navigation";
 
 export async function submitContact(formData: FormData) {
-  const company = String(formData.get("company") || "").trim();
-  if (company) return;
+  const honeypot = String(formData.get("website") || formData.get("company") || "").trim();
+  if (honeypot) return;
 
   const name = String(formData.get("name") || "").trim();
   const email = String(formData.get("email") || "").trim();
