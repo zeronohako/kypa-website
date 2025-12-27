@@ -11,7 +11,7 @@ export async function submitContact(formData: FormData) {
   const email = String(formData.get("email") || "").trim();
   const subject = String(formData.get("subject") || "").trim();
   const message = String(formData.get("message") || "").trim();
-  const adminEmail = process.env.KYPA_CONTACT_EMAIL ?? "yunsuhan00107@gmail.com";
+  const adminEmail = process.env.KYPA_CONTACT_EMAIL ?? "info.kypa@gmail.com";
   const fromEmail = process.env.KYPA_FROM_EMAIL ?? "Korea Youth Pickleball <apply@koreaypa.org>";
 
   if (!name || !email || !subject) throw new Error("Missing required fields");
