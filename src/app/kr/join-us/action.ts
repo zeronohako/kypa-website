@@ -11,6 +11,8 @@ export async function submitApplication(formData: FormData) {
   const email = String(formData.get("email") || "").trim();
   const school = String(formData.get("school") || "").trim();
   const message = String(formData.get("message") || "").trim();
+  const adminEmail = process.env.KYPA_CONTACT_EMAIL ?? "info.kypa@gmail.com";
+  const fromEmail = process.env.KYPA_FROM_EMAIL ?? "Korea Youth Pickleball <apply@koreaypa.org>";
 
   if (!name || !email) throw new Error("Missing required fields");
   if (!process.env.RESEND_API_KEY) throw new Error("RESEND_API_KEY is missing");
@@ -18,8 +20,8 @@ export async function submitApplication(formData: FormData) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   const { error } = await resend.emails.send({
-    from: "Korea Youth Pickleball <apply@koreaypa.org>",
-    to: ["info.kypa@gmail.com"],
+    from: fromEmail,
+    to: [adminEmail],
     replyTo: email,
     subject: `Join Us application: ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nSchool: ${school}\n\nWhy join:\n${message}\n`,
